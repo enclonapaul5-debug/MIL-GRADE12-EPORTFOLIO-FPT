@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VECTORS OF TRUTH | MIL Multimedia E-Portfolio & Curatorial Showcase</title>
+  <meta name="description" content="A museum-grade Multimedia E-Portfolio for Media and Information Literacy (MIL) tracing the historical evolution and contemporary impact of media resources.">
+  
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-dark">
+
+  <!-- Ambient Museum Background -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <!-- Header & Navigation -->
+  <header class="exhibit-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="exhibit-badge">MIL CULMINATING SHOWCASE 2026</span>
+        <h1 class="exhibit-logo">VECTORS OF TRUTH</h1>
+        <p class="exhibit-subtitle">The Architecture of the Human Signal: From Clay to Cloud</p>
+      </div>
+
+      <nav class="wing-nav" aria-label="Exhibition Wings">
+        <a href="#lobby" class="nav-item active" data-wing="lobby">Lobby</a>
+        <a href="#wing-1" class="nav-item" data-wing="wing-1">Wing 1: Video</a>
+        <a href="#wing-2" class="nav-item" data-wing="wing-2">Wing 2: Photo</a>
+        <a href="#wing-3" class="nav-item" data-wing="wing-3">Wing 3: Text</a>
+        <a href="#wing-4" class="nav-item" data-wing="wing-4">Wing 4: Audio</a>
+        <a href="#ethics" class="nav-item" data-wing="ethics">Ethics & Colophon</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle-btn" class="btn-icon" title="Toggle Light/Dark Display" aria-label="Toggle theme">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <button id="export-drawer-btn" class="btn-primary" aria-label="Open portfolio export and tools">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Portfolio Toolkit
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Exhibition Floor -->
+  <main class="exhibition-container">
+
+    <!-- ==================== LOBBY: CURATOR'S STATEMENT ==================== -->
+    <section id="lobby" class="exhibit-wing active" aria-labelledby="lobby-heading">
+      <div class="wing-banner">
+        <span class="wing-tag">ENTRANCE ROTUNDA</span>
+        <h2 id="lobby-heading" class="wing-title">Curator’s Statement</h2>
+        <p class="wing-lead">The Architecture of the Human Signal: From Clay to Cloud</p>
+      </div>
+
+      <div class="curator-layout">
+        <div class="curator-portrait-card">
+          <div class="portrait-frame">
+            <svg class="curator-insignia" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60" cy="60" r="56" stroke="var(--gold)" stroke-width="2" stroke-dasharray="4 4"/>
+              <circle cx="60" cy="60" r="42" stroke="var(--accent-glow)" stroke-width="1.5"/>
+              <path d="M60 25 V95 M25 60 H95 M35 35 L85 85 M35 85 L85 35" stroke="var(--gold-dim)" stroke-width="1"/>
+              <circle cx="60" cy="60" r="8" fill="var(--gold)"/>
+            </svg>
+          </div>
+          <div class="curator-meta">
+            <span class="role-badge">CURATORIAL BOARD</span>
+            <h3>Senior High School MIL Production Team</h3>
+            <p>Media Historians • Visual Storytellers • Curators</p>
+            <div class="meta-pills">
+              <span>Grade 12 Culminating Exhibit</span>
+              <span>AY 2026–2027</span>
+              <span>DepEd MIL Standards</span>
+            </div>
+            <button id="narrate-statement-btn" class="btn-secondary audio-narrate-btn" data-target="curator-text">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+              <span>Listen to Statement</span>
+            </button>
+          </div>
+        </div>
+
+        <article class="curator-text-card">
+          <div class="statement-header">
+            <span class="spec-metric">OFFICIAL MANIFESTO • 268 WORDS</span>
+            <div class="rubric-badge">Compliant with 200–300 Word Rubric</div>
+          </div>
+          
+          <div id="curator-text" class="statement-body">
+            <p class="drop-cap-paragraph">
+              Human civilization is fundamentally defined by its impulse to record, encode, and transmit meaning beyond the ephemeral limits of speech. Every epoch in human history has been inaugurated not merely by political revolutions, but by technological shifts in how information is preserved, disseminated, and valorized. In today’s hyper-connected environment, we consume tens of thousands of mediated messages daily—from algorithmically recommended feeds to micro-targeted broadcasts—often without contemplating the invisible structural mechanisms that shape our cognitive realities.
+            </p>
+            <p>
+              <em>Vectors of Truth</em> invites viewers into an investigative journey through the four cardinal dimensions of media and information: temporal evolution (Video), visual grammar (Photography), structured thought (Text), and acoustic rhetoric (Audio). As media historians and curators, we argue that no medium is neutral. The medium itself operates as an epistemological filter: the clay cuneiform tablet enforced bureaucratic permanence; the industrial printing press catalyzed mass democratization and standardized vernaculars; electronic broadcast synthesized simultaneous national consciousness; and the algorithmic cloud fractured public discourse into self-reinforcing echo chambers.
+            </p>
+            <p>
+              Through this exhibition, our primary objective is to cultivate critical agency. Media literacy is not simply a technical proficiency in navigating digital interfaces; it is an essential civic discipline. By examining how design choices, framing techniques, typographic hierarchies, and auditory layers steer human perception, visitors are empowered to transition from passive consumers of ambient data into deliberate, ethical interrogators of modern knowledge ecosystems. Welcome to the exhibit; may these corridors illuminate the quiet architectures behind everything you see, hear, and read.
+            </p>
+          </div>
+
+          <div class="statement-footer">
+            <div class="manifesto-principles">
+              <div class="principle-item">
+                <span class="num">01</span>
+                <div>
+                  <strong>No Medium is Neutral</strong>
+                  <small>Form determines cognition and societal structure.</small>
+                </div>
+              </div>
+              <div class="principle-item">
+                <span class="num">02</span>
+                <div>
+                  <strong>Literacy is Civic Defense</strong>
+                  <small>Critical evaluation protects democratic autonomy.</small>
+                </div>
+              </div>
+              <div class="principle-item">
+                <span class="num">03</span>
+                <div>
+                  <strong>Agency Over Automation</strong>
+                  <small>Conscious human choice against frictionless bias.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==================== WING 1: VIDEO PRESENTATION ==================== -->
+    <section id="wing-1" class="exhibit-wing" aria-labelledby="wing1-heading">
+      <div class="wing-banner">
+        <span class="wing-tag">EXHIBIT WING 01 • MOTION & TIME</span>
+        <h2 id="wing1-heading" class="wing-title">The Evolution of Media</h2>
+        <p class="wing-lead">Tracing the Signal Across Four Technological Epochs (4-Minute Presentation)</p>
+      </div>
+
+      <!-- Interactive Cinematic Player -->
+      <div class="cinematic-showcase">
+        <div class="video-simulator-viewport" id="video-viewport">
+          <!-- Animated Canvas / Visual Canvas -->
+          <div class="viewport-stage" id="viewport-stage">
+            <div class="era-visual-container active" data-era="0">
+              <div class="era-backdrop era-preindustrial">
+                <div class="visual-art cavern-art">
+                  <svg viewBox="0 0 800 450" class="scene-svg">
+                    <!-- Cavern Painting & Clay Tablet Vector -->
+                    <defs>
+                      <radialGradient id="torchGlow" cx="30%" cy="40%" r="60%">
+                        <stop offset="0%" stop-color="#ff9933" stop-opacity="0.8"/>
+                        <stop offset="60%" stop-color="#7a2e00" stop-opacity="0.4"/>
+                        <stop offset="100%" stop-color="#140a05" stop-opacity="0.95"/>
+                      </radialGradient>
+                    </defs>
+                    <rect width="800" height="450" fill="url(#torchGlow)"/>
+                    <path d="M120 280 Q200 220 320 260 T500 240 Q620 230 720 310 L750 420 L80 420 Z" fill="#24130a" opacity="0.85"/>
+                    <!-- Bison / Cave painting silhouette -->
+                    <path d="M240 230 C250 180 290 170 330 175 C360 170 410 160 450 185 C490 200 520 220 540 250 C520 270 480 285 450 280 C410 290 360 285 320 280 C280 285 250 265 240 230 Z" fill="#d95d1e" opacity="0.7" stroke="#e07d38" stroke-width="3"/>
+                    <path d="M260 240 L240 310 M310 280 L300 320 M450 280 L460 325 M500 270 L520 315" stroke="#d95d1e" stroke-width="8" stroke-linecap="round"/>
+                    <!-- Cuneiform Tablet overlay -->
+                    <rect x="580" y="80" width="160" height="200" rx="12" fill="#8c6643" stroke="#543922" stroke-width="4"/>
+                    <g stroke="#3a2514" stroke-width="2.5" stroke-linecap="round">
+                      <line x1="600" y1="110" x2="720" y2="110"/>
+                      <line x1="600" y1="135" x2="710" y2="135"/>
+                      <line x1="600" y1="160" x2="690" y2="160"/>
+                      <line x1="600" y1="185" x2="720" y2="185"/>
+                      <line x1="600" y1="210" x2="670" y2="210"/>
+                      <line x1="600" y1="235" x2="700" y2="235"/>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="era-visual-container" data-era="1">
+              <div class="era-backdrop era-industrial">
+                <div class="visual-art press-art">
+                  <svg viewBox="0 0 800 450" class="scene-svg">
+                    <defs>
+                      <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#3d444d"/>
+                        <stop offset="50%" stop-color="#1e2227"/>
+                        <stop offset="100%" stop-color="#0e1013"/>
+                      </linearGradient>
+                    </defs>
+                    <rect width="800" height="450" fill="url(#metalGrad)"/>
+                    <!-- Gutenberg Press Gears and Type -->
+                    <circle cx="280" cy="220" r="130" stroke="#7d8794" stroke-width="12" stroke-dasharray="24 16" fill="none"/>
+                    <circle cx="280" cy="220" r="80" stroke="#aab4c2" stroke-width="6" fill="#14181c"/>
+                    <circle cx="480" cy="220" r="90" stroke="#7d8794" stroke-width="10" stroke-dasharray="18 12" fill="none"/>
+                    <!-- Cascading broadsheet paper ribbons -->
+                    <path d="M400 40 Q460 120 440 220 T520 400 L680 400 Q620 220 600 120 T620 40 Z" fill="#e8e1d5" opacity="0.9" stroke="#999" stroke-width="2"/>
+                    <g fill="#222" opacity="0.7">
+                      <rect x="470" y="90" width="80" height="8"/>
+                      <rect x="465" y="110" width="90" height="6"/>
+                      <rect x="460" y="125" width="85" height="6"/>
+                      <rect x="475" y="160" width="110" height="10"/>
+                      <rect x="480" y="180" width="100" height="6"/>
+                      <rect x="475" y="220" width="110" height="6"/>
+                    </g>
+                    <!-- Telegraph wire lines -->
+                    <line x1="0" y1="90" x2="800" y2="40" stroke="#ffaa33" stroke-width="2" stroke-dasharray="6 8"/>
+                    <line x1="0" y1="120" x2="800" y2="70" stroke="#ffaa33" stroke-width="1.5" stroke-dasharray="4 6"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="era-visual-container" data-era="2">
+              <div class="era-backdrop era-electronic">
+                <div class="visual-art tube-art">
+                  <svg viewBox="0 0 800 450" class="scene-svg">
+                    <rect width="800" height="450" fill="#0d1117"/>
+                    <!-- CRT Television Screen Curve -->
+                    <rect x="180" y="50" width="440" height="320" rx="40" fill="#1b2430" stroke="#3b4b5e" stroke-width="12"/>
+                    <rect x="200" y="70" width="400" height="280" rx="28" fill="#0a3240" stroke="#48dbfb" stroke-width="2"/>
+                    <!-- CRT scanlines effect -->
+                    <g stroke="#00ffff" stroke-width="1" opacity="0.3">
+                      <line x1="200" y1="90" x2="600" y2="90"/>
+                      <line x1="200" y1="110" x2="600" y2="110"/>
+                      <line x1="200" y1="130" x2="600" y2="130"/>
+                      <line x1="200" y1="150" x2="600" y2="150"/>
+                      <line x1="200" y1="170" x2="600" y2="170"/>
+                      <line x1="200" y1="190" x2="600" y2="190"/>
+                      <line x1="200" y1="210" x2="600" y2="210"/>
+                      <line x1="200" y1="230" x2="600" y2="230"/>
+                      <line x1="200" y1="250" x2="600" y2="250"/>
+                      <line x1="200" y1="270" x2="600" y2="270"/>
+                      <line x1="200" y1="290" x2="600" y2="290"/>
+                      <line x1="200" y1="310" x2="600" y2="310"/>
+                      <line x1="200" y1="330" x2="600" y2="330"/>
+                    </g>
+                    <!-- Audio Sinusoidal Waveform -->
+                    <path d="M220 210 Q270 140 320 210 T420 210 T520 210 T580 210" fill="none" stroke="#54e346" stroke-width="4"/>
+                    <!-- Broadcast antenna beacon -->
+                    <polygon points="100,380 120,180 140,380" fill="none" stroke="#ff7675" stroke-width="3"/>
+                    <circle cx="120" cy="175" r="8" fill="#ff7675"/>
+                    <circle cx="120" cy="175" r="24" stroke="#ff7675" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+                    <circle cx="120" cy="175" r="44" stroke="#ff7675" stroke-width="1.5" fill="none" stroke-dasharray="6 6"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="era-visual-container" data-era="3">
+              <div class="era-backdrop era-information">
+                <div class="visual-art cloud-art">
+                  <svg viewBox="0 0 800 450" class="scene-svg">
+                    <rect width="800" height="450" fill="#060913"/>
+                    <!-- Constellation / Network mesh & Neural Graph -->
+                    <g stroke="#38ef7d" stroke-width="1.5" opacity="0.6">
+                      <line x1="150" y1="120" x2="280" y2="80"/>
+                      <line x1="280" y1="80" x2="420" y2="150"/>
+                      <line x1="420" y1="150" x2="560" y2="90"/>
+                      <line x1="560" y1="90" x2="680" y2="160"/>
+                      <line x1="280" y1="80" x2="240" y2="250"/>
+                      <line x1="420" y1="150" x2="380" y2="300"/>
+                      <line x1="560" y1="90" x2="590" y2="280"/>
+                      <line x1="240" y1="250" x2="380" y2="300"/>
+                      <line x1="380" y1="300" x2="590" y2="280"/>
+                      <line x1="380" y1="300" x2="420" y2="400"/>
+                      <line x1="590" y1="280" x2="720" y2="350"/>
+                    </g>
+                    <!-- Glowing nodes -->
+                    <g fill="#11998e">
+                      <circle cx="150" cy="120" r="7"/>
+                      <circle cx="280" cy="80" r="10" fill="#38ef7d"/>
+                      <circle cx="420" cy="150" r="14" fill="#00f2fe"/>
+                      <circle cx="560" cy="90" r="8"/>
+                      <circle cx="680" cy="160" r="11" fill="#38ef7d"/>
+                      <circle cx="240" cy="250" r="9"/>
+                      <circle cx="380" cy="300" r="15" fill="#4facfe"/>
+                      <circle cx="590" cy="280" r="12" fill="#00f2fe"/>
+                      <circle cx="420" cy="400" r="8"/>
+                      <circle cx="720" cy="350" r="9"/>
+                    </g>
+                    <!-- Floating Data Feed Token UI -->
+                    <rect x="460" y="160" width="180" height="55" rx="8" fill="#1e293b" opacity="0.9" stroke="#3b82f6" stroke-width="2"/>
+                    <circle cx="480" cy="187" r="10" fill="#ec4899"/>
+                    <rect x="500" y="177" width="90" height="7" rx="3" fill="#94a3b8"/>
+                    <rect x="500" y="190" width="60" height="5" rx="2" fill="#64748b"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Overlay HUD -->
+          <div class="viewport-hud">
+            <div class="hud-top">
+              <span class="live-rec-badge"><span class="rec-dot"></span> 4K MIL ARCHIVAL FEED</span>
+              <span id="current-era-badge" class="era-pill">ACT I: PRE-INDUSTRIAL AGE (BEFORE 1700s)</span>
+              <span id="video-timecode" class="timecode-display">00:00 / 04:00</span>
+            </div>
+            
+            <div class="hud-center-narration">
+              <p id="kinetic-subtitle" class="kinetic-text">
+                "Before machines learned to speak, memory was bound to bone, stone, and breath..."
+              </p>
+            </div>
+
+            <div class="hud-bottom-controls">
+              <button id="video-play-btn" class="hud-btn-main" aria-label="Play presentation">
+                <svg id="play-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                <svg id="pause-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+              </button>
+              
+              <div class="timeline-bar-wrapper">
+                <div class="timeline-bar" id="timeline-track">
+                  <div class="timeline-progress" id="timeline-progress" style="width: 0%;"></div>
+                  <div class="era-markers">
+                    <span class="era-checkpoint active" data-seek="0" title="Act I: Pre-Industrial">I</span>
+                    <span class="era-checkpoint" data-seek="60" title="Act II: Industrial">II</span>
+                    <span class="era-checkpoint" data-seek="120" title="Act III: Electronic">III</span>
+                    <span class="era-checkpoint" data-seek="180" title="Act IV: Information">IV</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hud-secondary-actions">
+                <button id="voiceover-toggle-btn" class="hud-btn-sub" title="Toggle Synthesized Voiceover">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                  <span>Voiceover: ON</span>
+                </button>
+                <button id="storyboard-modal-btn" class="hud-btn-sub" title="View Scene-by-Scene Script">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                  <span>Storyboard</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Four Eras Selector Tabs -->
+        <div class="era-selector-tabs">
+          <button class="era-tab active" data-index="0">
+            <span class="era-idx">ERA 01</span>
+            <strong>Pre-Industrial Age</strong>
+            <small>Before 1700s • Clay, Cave & Parchment</small>
+          </button>
+          <button class="era-tab" data-index="1">
+            <span class="era-idx">ERA 02</span>
+            <strong>Industrial Age</strong>
+            <small>1700s–1930s • Printing Press & Steam</small>
+          </button>
+          <button class="era-tab" data-index="2">
+            <span class="era-idx">ERA 03</span>
+            <strong>Electronic Age</strong>
+            <small>1930s–1980s • Radio, TV & Transistors</small>
+          </button>
+          <button class="era-tab" data-index="3">
+            <span class="era-idx">ERA 04</span>
+            <strong>Information Age</strong>
+            <small>1990s–Present • Web, Algorithmic Feeds & AI</small>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mandatory Curatorial Placard: Wing 1 -->
+      <aside class="curatorial-placard-plaque" aria-label="Curatorial Placard for Wing 1">
+        <div class="placard-border">
+          <div class="placard-header">
+            <span class="placard-brass-label">CURATORIAL PLACARD • ARTIFACT 01</span>
+            <div class="placard-meta-row">
+              <h3 class="placard-title">Echoes of the Signal: Four Epochs of Human Communication</h3>
+              <span class="placard-spec">Digital Video & Kinetic Documentary • 4:00 Min • 4K 24fps • Word Count: 138</span>
+            </div>
+          </div>
+
+          <div class="placard-tabs">
+            <button class="placard-tab active" data-target="w1-design">Design Elements & Principles</button>
+            <button class="placard-tab" data-target="w1-criteria">Media Selection Criteria Evaluation</button>
+          </div>
+
+          <div class="placard-content">
+            <div id="w1-design" class="placard-pane active">
+              <p>
+                The video utilizes <strong>temporal rhythm</strong> to contrast the deliberate, meditative pacing of ancient stone carving with the rapid, staccato montage of digital feeds. <strong>Visual framing</strong> adheres to the cinematic rule-of-thirds, maintaining eye-level intimacy during historical vignettes to humanize technological shifts. High-contrast <strong>chromatic grading</strong> visually separates eras: warm sepia and chiaroscuro for pre-industrial manual craft, stark high-contrast grayscale for industrial mechanical mass production, and cool cyan-luminescent grading for the digital age.
+              </p>
+            </div>
+            <div id="w1-criteria" class="placard-pane">
+              <p>
+                Historical timelines and archival assets were verified against peer-reviewed media histories (Briggs & Burke, 2020), ensuring academic <strong>accuracy</strong> and <strong>authority</strong>. The content delivers high pedagogical <strong>value</strong> by mapping technical evolutions directly to societal impacts, specifically tailored in language and pacing for <strong>Grade 12 MIL learners</strong>. <strong>Timeliness</strong> is addressed by culminating in current discussions of synthetic media and generative algorithms.
+              </p>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ==================== WING 2: PHOTO SERIES ==================== -->
+    <section id="wing-2" class="exhibit-wing" aria-labelledby="wing2-heading">
+      <div class="wing-banner">
+        <span class="wing-tag">EXHIBIT WING 02 • VISUAL STORYTELLING</span>
+        <h2 id="wing2-heading" class="wing-title">Media and Information in Action</h2>
+        <p class="wing-lead">The Visible Circuit: A 6-Part Photo Essay on Community Information Ecosystems</p>
+      </div>
+
+      <!-- Composition Analysis Toolbar -->
+      <div class="gallery-toolbar">
+        <span class="toolbar-label">Interactive Curatorial Overlays:</span>
+        <div class="overlay-toggles">
+          <button id="toggle-grid-btn" class="toggle-pill active" data-mode="grid">
+            <span class="toggle-indicator"></span> Rule of Thirds Grid
+          </button>
+          <button id="toggle-lines-btn" class="toggle-pill active" data-mode="lines">
+            <span class="toggle-indicator"></span> Leading Lines
+          </button>
+          <button id="toggle-focal-btn" class="toggle-pill active" data-mode="focal">
+            <span class="toggle-indicator"></span> Focal Point Targets
+          </button>
+        </div>
+      </div>
+
+      <!-- Photo Grid Exhibition -->
+      <div class="photo-essay-grid" id="photo-grid">
+
+        <!-- Photo 01 -->
+        <figure class="photo-card" data-photo-id="1">
+          <div class="photo-frame">
+            <svg viewBox="0 0 600 400" class="photo-canvas" preserveAspectRatio="xMidYMid slice">
+              <!-- Illustration: Book stacks & archivist -->
+              <defs>
+                <linearGradient id="libraryLight" x1="0%" y1="0%" x2="100%" y2="80%">
+                  <stop offset="0%" stop-color="#fff8db" stop-opacity="0.9"/>
+                  <stop offset="40%" stop-color="#c49a45" stop-opacity="0.3"/>
+                  <stop offset="100%" stop-color="#0f0c08" stop-opacity="0.95"/>
+                </linearGradient>
+              </defs>
+              <rect width="600" height="400" fill="#17120a"/>
+              <!-- Book stacks creating vertical leading lines -->
+              <rect x="40" y="20" width="80" height="360" fill="#2d1f11" stroke="#4a341e" stroke-width="2"/>
+              <rect x="130" y="40" width="70" height="340" fill="#3a2817" stroke="#5a4025" stroke-width="2"/>
+              <rect x="480" y="30" width="80" height="350" fill="#2d1f11" stroke="#4a341e" stroke-width="2"/>
+              <!-- Books on shelves -->
+              <g fill="#802b1c" opacity="0.8">
+                <rect x="50" y="60" width="60" height="18"/>
+                <rect x="50" y="85" width="60" height="24" fill="#1b4d3e"/>
+                <rect x="50" y="115" width="60" height="15" fill="#a07828"/>
+                <rect x="50" y="180" width="60" height="30" fill="#4a5568"/>
+              </g>
+              <!-- Archivist silhouette at right third -->
+              <circle cx="390" cy="170" r="28" fill="#d4af37" opacity="0.9"/>
+              <path d="M350 250 C360 210 420 210 430 250 L425 360 L355 360 Z" fill="#231a10"/>
+              <!-- Old Cadastral Ledger book held in hands -->
+              <polygon points="340,240 400,225 430,265 370,280" fill="#eed9b3" stroke="#8b5a2b" stroke-width="2"/>
+              <!-- Diagonal shaft of clerestory light -->
+              <polygon points="200,0 280,0 450,400 370,400" fill="url(#libraryLight)"/>
+            </svg>
+
+            <!-- Curatorial Composition Overlay Elements -->
+            <div class="overlay-layer rule-of-thirds-grid"></div>
+            <div class="overlay-layer leading-lines-layer">
+              <svg viewBox="0 0 600 400" class="overlay-svg">
+                <line x1="80" y1="380" x2="380" y2="230" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="6 4"/>
+                <line x1="520" y1="380" x2="410" y2="240" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="6 4"/>
+                <line x1="240" y1="0" x2="390" y2="225" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="4 4"/>
+              </svg>
+            </div>
+            <div class="overlay-layer focal-point-layer">
+              <div class="focal-marker" style="top: 42%; left: 65%;" title="Focal Point: Ledger & Hands"></div>
+            </div>
+
+            <span class="photo-index-tag">PLATE 01 • PRINT ARCHIVES</span>
+          </div>
+
+          <figcaption class="photo-meta">
+            <h4 class="photo-title">The Custodian of the Unscrolled</h4>
+            <p class="photo-caption">
+              Beneath the quiet hum of fluorescent lights at the City Heritage Library, head archivist Manuel Soriano inspects municipal land deeds dating back to the late 1940s. While digital databases promise infinite searchability, physical paper repositories remain the legal bedrock of public memory, immune to algorithmic corruption or server obsolescence. Soriano handles each folio with cotton gloves, maintaining that true preservation requires equal parts patience and sensory vigilance.
+            </p>
+            <div class="technical-exif">
+              <span>35mm f/2.0</span> • <span>1/125s</span> • <span>ISO 800</span> • <span>Natural Light Chiaroscuro</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- Photo 02 -->
+        <figure class="photo-card" data-photo-id="2">
+          <div class="photo-frame">
+            <svg viewBox="0 0 600 400" class="photo-canvas" preserveAspectRatio="xMidYMid slice">
+              <rect width="600" height="400" fill="#0b0f19"/>
+              <!-- Broadcast studio desk & microphone -->
+              <!-- Audio Console with glowing VU meters -->
+              <rect x="60" y="270" width="480" height="110" rx="6" fill="#1f2937" stroke="#374151" stroke-width="2"/>
+              <g fill="#10b981">
+                <rect x="90" y="290" width="12" height="60" rx="2"/>
+                <rect x="110" y="305" width="12" height="45" rx="2"/>
+                <rect x="130" y="285" width="12" height="65" rx="2" fill="#ef4444"/>
+                <rect x="150" y="300" width="12" height="50" rx="2"/>
+              </g>
+              <!-- Big Broadcast Mic in Foreground -->
+              <g transform="translate(180, 80)">
+                <rect x="0" y="60" width="70" height="130" rx="30" fill="#4b5563" stroke="#9ca3af" stroke-width="4"/>
+                <!-- Mesh lines -->
+                <line x1="10" y1="90" x2="60" y2="90" stroke="#d1d5db" stroke-width="2"/>
+                <line x1="10" y1="120" x2="60" y2="120" stroke="#d1d5db" stroke-width="2"/>
+                <line x1="10" y1="150" x2="60" y2="150" stroke="#d1d5db" stroke-width="2"/>
+                <!-- Boom arm -->
+                <line x1="35" y1="60" x2="35" y2="0" stroke="#9ca3af" stroke-width="8"/>
+              </g>
+              <!-- Broadcaster profile in background -->
+              <circle cx="430" cy="160" r="45" fill="#f59e0b" opacity="0.85"/>
+              <path d="M370 270 C380 220 480 220 490 270 Z" fill="#1e293b"/>
+              <!-- Studio Headphones -->
+              <path d="M390 140 C390 100 470 100 470 140" fill="none" stroke="#60a5fa" stroke-width="8"/>
+              <circle cx="390" cy="155" r="14" fill="#1e3a8a"/>
+              <circle cx="470" cy="155" r="14" fill="#1e3a8a"/>
+            </svg>
+
+            <div class="overlay-layer rule-of-thirds-grid"></div>
+            <div class="overlay-layer leading-lines-layer">
+              <svg viewBox="0 0 600 400" class="overlay-svg">
+                <line x1="215" y1="270" x2="430" y2="160" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="6 4"/>
+                <line x1="60" y1="380" x2="215" y2="180" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="4 4"/>
+              </svg>
+            </div>
+            <div class="overlay-layer focal-point-layer">
+              <div class="focal-marker" style="top: 40%; left: 36%;" title="Focal Point: Suspending Microphone"></div>
+            </div>
+
+            <span class="photo-index-tag">PLATE 02 • BROADCAST MEDIA</span>
+          </div>
+
+          <figcaption class="photo-meta">
+            <h4 class="photo-title">Resonant Frequency at 102.5</h4>
+            <p class="photo-caption">
+              Broadcaster Elena Valderrama monitors caller audio levels during the live civic forum program at DZRB Community Radio in suburban Rizal. During monsoon emergencies and power outages, transistor radio broadcasts remain the most reliable lifeline for underserved coastal barangays cut off from cellular reception. Her voice reaches thousands of battery-powered receivers across the province, demonstrating the unyielding resilience of electromagnetic audio.
+            </p>
+            <div class="technical-exif">
+              <span>50mm f/1.8</span> • <span>1/60s</span> • <span>ISO 1200</span> • <span>LED Studio Ambient</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- Photo 03 -->
+        <figure class="photo-card" data-photo-id="3">
+          <div class="photo-frame">
+            <svg viewBox="0 0 600 400" class="photo-canvas" preserveAspectRatio="xMidYMid slice">
+              <rect width="600" height="400" fill="#78716c"/>
+              <!-- Sky and utility pole -->
+              <rect x="0" y="0" width="600" height="240" fill="#38bdf8" opacity="0.3"/>
+              <!-- Wooden utility pole -->
+              <rect x="180" y="0" width="45" height="400" fill="#57381e"/>
+              <!-- Metal megaphone horn mounted -->
+              <polygon points="225,120 380,60 380,180" fill="#a8a29e" stroke="#57534e" stroke-width="4"/>
+              <ellipse cx="380" cy="120" rx="15" ry="60" fill="#d6d3d1" stroke="#44403c" stroke-width="3"/>
+              <!-- Community Bulletin Board -->
+              <rect x="225" y="190" width="280" height="170" fill="#78350f" stroke="#451a03" stroke-width="6"/>
+              <!-- Pinned Notices & flyers -->
+              <rect x="245" y="210" width="65" height="85" fill="#fef08a" transform="rotate(-3 245 210)"/>
+              <rect x="330" y="215" width="80" height="100" fill="#ffffff" transform="rotate(2 330 215)"/>
+              <rect x="425" y="210" width="60" height="70" fill="#fed7aa" transform="rotate(-4 425 210)"/>
+              <!-- Diagonal utility wires -->
+              <line x1="0" y1="40" x2="600" y2="140" stroke="#1c1917" stroke-width="3"/>
+              <line x1="0" y1="70" x2="600" y2="160" stroke="#1c1917" stroke-width="2"/>
+            </svg>
+
+            <div class="overlay-layer rule-of-thirds-grid"></div>
+            <div class="overlay-layer leading-lines-layer">
+              <svg viewBox="0 0 600 400" class="overlay-svg">
+                <line x1="0" y1="40" x2="380" y2="120" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="6 4"/>
+                <line x1="202" y1="400" x2="202" y2="120" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="4 4"/>
+              </svg>
+            </div>
+            <div class="overlay-layer focal-point-layer">
+              <div class="focal-marker" style="top: 30%; left: 45%;" title="Focal Point: Megaphone Horn"></div>
+            </div>
+
+            <span class="photo-index-tag">PLATE 03 • INDIGENOUS & COMMUNITY COMMS</span>
+          </div>
+
+          <figcaption class="photo-meta">
+            <h4 class="photo-title">The Galvanized Megaphone</h4>
+            <p class="photo-caption">
+              Bolted above a crowded street corner in Barangay San Martin, an analog public address horn and bulletin board serve as the primary communication nexus for neighborhood announcements. Before WhatsApp group chats and local government Facebook pages, oral amplification through the village crier or public address system ensured universal civic awareness regardless of digital literacy. Today, it remains an indispensable bastion of grassroots information distribution.
+            </p>
+            <div class="technical-exif">
+              <span>24mm f/4.0</span> • <span>1/500s</span> • <span>ISO 200</span> • <span>Hard Midday Sunlight</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- Photo 04 -->
+        <figure class="photo-card" data-photo-id="4">
+          <div class="photo-frame">
+            <svg viewBox="0 0 600 400" class="photo-canvas" preserveAspectRatio="xMidYMid slice">
+              <rect width="600" height="400" fill="#030712"/>
+              <!-- Subway / Train Window with motion blur lights -->
+              <rect x="60" y="40" width="480" height="180" rx="12" fill="#111827"/>
+              <g opacity="0.6">
+                <line x1="80" y1="80" x2="220" y2="80" stroke="#ec4899" stroke-width="8" stroke-linecap="round"/>
+                <line x1="260" y1="120" x2="480" y2="120" stroke="#3b82f6" stroke-width="12" stroke-linecap="round"/>
+                <line x1="140" y1="160" x2="340" y2="160" stroke="#10b981" stroke-width="6" stroke-linecap="round"/>
+              </g>
+              <!-- 4 Seated Commuters bowed over phones -->
+              <g transform="translate(70, 180)">
+                <!-- Person 1 -->
+                <circle cx="60" cy="50" r="22" fill="#1f2937"/>
+                <path d="M40 120 C45 80 85 80 90 120 Z" fill="#111827"/>
+                <rect x="75" y="90" width="16" height="28" rx="3" fill="#60a5fa" stroke="#93c5fd" stroke-width="1.5"/>
+                <!-- Person 2 -->
+                <circle cx="180" cy="55" r="24" fill="#374151"/>
+                <path d="M155 120 C160 85 205 85 210 120 Z" fill="#1f2937"/>
+                <rect x="195" y="95" width="16" height="28" rx="3" fill="#38bdf8" stroke="#bae6fd" stroke-width="1.5"/>
+                <!-- Person 3 -->
+                <circle cx="300" cy="48" r="23" fill="#1f2937"/>
+                <path d="M280 120 C285 80 325 80 330 120 Z" fill="#111827"/>
+                <rect x="315" y="88" width="16" height="28" rx="3" fill="#60a5fa" stroke="#93c5fd" stroke-width="1.5"/>
+                <!-- Person 4 -->
+                <circle cx="420" cy="52" r="22" fill="#374151"/>
+                <path d="M398 120 C405 85 445 85 450 120 Z" fill="#1f2937"/>
+                <rect x="435" y="92" width="16" height="28" rx="3" fill="#38bdf8" stroke="#bae6fd" stroke-width="1.5"/>
+              </g>
+            </svg>
+
+            <div class="overlay-layer rule-of-thirds-grid"></div>
+            <div class="overlay-layer leading-lines-layer">
+              <svg viewBox="0 0 600 400" class="overlay-svg">
+                <line x1="60" y1="270" x2="540" y2="270" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6 4"/>
+              </svg>
+            </div>
+            <div class="overlay-layer focal-point-layer">
+              <div class="focal-marker" style="top: 68%; left: 45%;" title="Focal Point: Glowing Handheld Displays"></div>
+            </div>
+
+            <span class="photo-index-tag">PLATE 04 • DIGITAL CONSUMPTION HABITS</span>
+          </div>
+
+          <figcaption class="photo-meta">
+            <h4 class="photo-title">The Phosphor Commute</h4>
+            <p class="photo-caption">
+              Commuters bound for southern terminus stations sit shoulder-to-shoulder on the evening rail transit, illuminated exclusively by the luminescent glow of their smartphone feeds. In the modern public sphere, physical shared spaces have transformed into distributed networks of individualized media bubbles. Each passenger inhabits a distinct, algorithmically curated reality, consuming short-form video, breaking political dispatches, and private correspondences simultaneously.
+            </p>
+            <div class="technical-exif">
+              <span>35mm f/1.4</span> • <span>1/60s</span> • <span>ISO 3200</span> • <span>Smartphone Screen Luminescence</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- Photo 05 -->
+        <figure class="photo-card" data-photo-id="5">
+          <div class="photo-frame">
+            <svg viewBox="0 0 600 400" class="photo-canvas" preserveAspectRatio="xMidYMid slice">
+              <rect width="600" height="400" fill="#1c1917"/>
+              <!-- Warm kitchen table setting -->
+              <ellipse cx="300" cy="380" rx="280" ry="90" fill="#44281d" stroke="#78350f" stroke-width="3"/>
+              <!-- Laptop Screen -->
+              <rect x="220" y="160" width="160" height="110" rx="6" fill="#1e293b" stroke="#cbd5e1" stroke-width="3"/>
+              <rect x="235" y="175" width="130" height="80" fill="#f8fafc"/>
+              <rect x="245" y="185" width="110" height="12" fill="#10b981"/>
+              <rect x="245" y="205" width="80" height="6" fill="#64748b"/>
+              <rect x="245" y="215" width="100" height="6" fill="#94a3b8"/>
+              <!-- Granddaughter (left) silhouette -->
+              <circle cx="160" cy="140" r="32" fill="#f59e0b"/>
+              <path d="M110 240 C120 180 200 180 210 240 Z" fill="#b45309"/>
+              <!-- Grandfather (right) silhouette -->
+              <circle cx="440" cy="130" r="35" fill="#d97706"/>
+              <path d="M390 240 C400 180 480 180 490 240 Z" fill="#78350f"/>
+              <!-- Intersecting Hands pointing to screen -->
+              <line x1="180" y1="210" x2="260" y2="210" stroke="#fef3c7" stroke-width="8" stroke-linecap="round"/>
+              <line x1="420" y1="215" x2="340" y2="215" stroke="#fed7aa" stroke-width="8" stroke-linecap="round"/>
+            </svg>
+
+            <div class="overlay-layer rule-of-thirds-grid"></div>
+            <div class="overlay-layer leading-lines-layer">
+              <svg viewBox="0 0 600 400" class="overlay-svg">
+                <line x1="160" y1="140" x2="300" y2="210" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="6 4"/>
+                <line x1="440" y1="130" x2="300" y2="210" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="6 4"/>
+              </svg>
+            </div>
+            <div class="overlay-layer focal-point-layer">
+              <div class="focal-marker" style="top: 52%; left: 50%;" title="Focal Point: Convergence of Hands & Screen"></div>
+            </div>
+
+            <span class="photo-index-tag">PLATE 05 • INFORMATION ENGAGEMENT & VERIFICATION</span>
+          </div>
+
+          <figcaption class="photo-meta">
+            <h4 class="photo-title">The Lateral Check</h4>
+            <p class="photo-caption">
+              At their dining table in Marikina, Grade 12 student Patricia Reyes demonstrates the SIFT verification method to her grandfather, Alberto, after he received a forwarded health remedy on a messaging app. As generative AI and synthetic text proliferate across family chat networks, young digital natives are increasingly assuming the role of in-house verification officers. The scene highlights how media literacy is not merely an academic exercise, but an act of intergenerational care.
+            </p>
+            <div class="technical-exif">
+              <span>50mm f/2.8</span> • <span>1/100s</span> • <span>ISO 640</span> • <span>Tungsten Kitchen Overhead</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- Photo 06 -->
+        <figure class="photo-card" data-photo-id="6">
+          <div class="photo-frame">
+            <svg viewBox="0 0 600 400" class="photo-canvas" preserveAspectRatio="xMidYMid slice">
+              <rect width="600" height="400" fill="#0f172a"/>
+              <!-- Sodium vapor street wash -->
+              <polygon points="120,0 280,0 450,400 0,400" fill="#f59e0b" opacity="0.15"/>
+              <!-- Street curb and pavement -->
+              <line x1="0" y1="280" x2="600" y2="340" stroke="#334155" stroke-width="6"/>
+              <!-- Stack of fresh broadsheet newspapers -->
+              <rect x="220" y="240" width="160" height="90" rx="4" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+              <!-- Bold front page headlines -->
+              <rect x="235" y="255" width="130" height="14" fill="#0f172a"/>
+              <rect x="235" y="275" width="80" height="8" fill="#475569"/>
+              <rect x="235" y="290" width="110" height="6" fill="#94a3b8"/>
+              <rect x="235" y="302" width="95" height="6" fill="#94a3b8"/>
+              <!-- Distributor hands cutting twine with wire snips -->
+              <circle cx="210" cy="200" r="26" fill="#b45309"/>
+              <line x1="210" y1="200" x2="260" y2="245" stroke="#fed7aa" stroke-width="10" stroke-linecap="round"/>
+              <line x1="140" y1="360" x2="380" y2="220" stroke="#f59e0b" stroke-width="3" stroke-dasharray="4 6"/>
+            </svg>
+
+            <div class="overlay-layer rule-of-thirds-grid"></div>
+            <div class="overlay-layer leading-lines-layer">
+              <svg viewBox="0 0 600 400" class="overlay-svg">
+                <line x1="0" y1="280" x2="600" y2="340" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="6 4"/>
+              </svg>
+            </div>
+            <div class="overlay-layer focal-point-layer">
+              <div class="focal-marker" style="top: 65%; left: 48%;" title="Focal Point: Cut Wire & Bold Newsprint"></div>
+            </div>
+
+            <span class="photo-index-tag">PLATE 06 • TANGIBLE NEWSPRINT ECOSYSTEM</span>
+          </div>
+
+          <figcaption class="photo-meta">
+            <h4 class="photo-title">Ink at 4:00 AM</h4>
+            <p class="photo-caption">
+              Vendor Danilo Santos bundles morning broadsheets and local tabloids under flickering sodium lamps along Quezon Avenue well before sunrise. Despite continuous declines in global print circulations, physical newspapers continue to provide standardized, non-algorithmic gatekeeping curated by professional editorial boards. Santos has serviced the same three blocks for thirty-two years, witnessing the gradual transition from paper boys to push notifications.
+            </p>
+            <div class="technical-exif">
+              <span>28mm f/2.0</span> • <span>1/80s</span> • <span>ISO 1600</span> • <span>Sodium-Vapor Streetlamp</span>
+            </div>
+          </figcaption>
+        </figure>
+
+      </div>
+
+      <!-- Mandatory Curatorial Placard: Wing 2 -->
+      <aside class="curatorial-placard-plaque" aria-label="Curatorial Placard for Wing 2">
+        <div class="placard-border">
+          <div class="placard-header">
+            <span class="placard-brass-label">CURATORIAL PLACARD • ARTIFACT 02</span>
+            <div class="placard-meta-row">
+              <h3 class="placard-title">The Visible Circuit: How Community Inscribes Meaning</h3>
+              <span class="placard-spec">Photojournalistic Suite • 6 Curated Plates • 35mm Equivalent • Word Count: 142</span>
+            </div>
+          </div>
+
+          <div class="placard-tabs">
+            <button class="placard-tab active" data-target="w2-design">Design Elements & Principles</button>
+            <button class="placard-tab" data-target="w2-criteria">Media Selection Criteria Evaluation</button>
+          </div>
+
+          <div class="placard-content">
+            <div id="w2-design" class="placard-pane active">
+              <p>
+                The photo essay systematically deploys <strong>leading lines</strong> (architectural stacks, utility cabling) to direct ocular flow toward human subjects engaged in informational labor. <strong>Chiaroscuro lighting</strong> serves as an interpretive motif: warm directional incandescent light symbolizes historical, deliberate knowledge preservation, while harsh, cool cyan LED illumination denotes modern algorithmic absorption. <strong>Visual balance</strong> is maintained across all six plates using asymmetrical framing and the rule of thirds, refusing clinical staged portraits in favor of raw environmental photojournalism.
+              </p>
+            </div>
+            <div id="w2-criteria" class="placard-pane">
+              <p>
+                These images were evaluated on their sociological <strong>accuracy</strong> and <strong>timeliness</strong>, capturing unvarnished contemporary community realities. They demonstrate profound educational <strong>value</strong> for MIL learners by visually disproving the misconception that media exists only as abstract software, grounding it as a tangible, physical civic infrastructure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ==================== WING 3: TEXT INFORMATION AND MEDIA ==================== -->
+    <section id="wing-3" class="exhibit-wing" aria-labelledby="wing3-heading">
+      <div class="wing-banner">
+        <span class="wing-tag">EXHIBIT WING 03 • TYPOGRAPHIC SYSTEMS</span>
+        <h2 id="wing3-heading" class="wing-title">Text Information and Media</h2>
+        <p class="wing-lead">The Filtered Horizon: Reclaiming Epistemic Agency in an Era of Algorithmic Gatekeepers</p>
+      </div>
+
+      <!-- Typography Customization Toolbar -->
+      <div class="type-specimen-toolbar">
+        <div class="toolbar-group">
+          <span class="tb-label">Typeface:</span>
+          <button class="type-btn active" data-font="serif">Transitional Serif</button>
+          <button class="type-btn" data-font="sans">Clean Editorial Sans</button>
+          <button class="type-btn" data-font="mono">Academic Monospace</button>
+        </div>
+
+        <div class="toolbar-group">
+          <span class="tb-label">Font Size:</span>
+          <button class="size-btn" data-size="small">A-</button>
+          <button class="size-btn active" data-size="medium">A</button>
+          <button class="size-btn" data-size="large">A+</button>
+        </div>
+
+        <div class="toolbar-group">
+          <span class="tb-label">Layout Spread:</span>
+          <button id="layout-toggle-btn" class="layout-toggle-pill active">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="8" height="18"/><rect x="13" y="3" width="8" height="18"/></svg>
+            Dual-Column Zine
+          </button>
+        </div>
+      </div>
+
+      <!-- Interactive Zine Spread Layout -->
+      <article id="zine-article" class="zine-spread dual-column font-serif size-medium">
+        
+        <header class="zine-masthead">
+          <div class="zine-kicker">CURATORIAL FEATURE ESSAY • MEDIA & INFORMATION LITERACY</div>
+          <h3 class="zine-headline">The Filtered Horizon</h3>
+          <p class="zine-deck">Reclaiming Epistemic Agency in an Era of Algorithmic Gatekeepers</p>
+          <div class="zine-byline">
+            <span>By the MIL Curatorial Team</span> • 
+            <span>Reading Time: 3.5 Minutes</span> • 
+            <span class="spec-metric">Exact Length: 532 Words (Rubric: 400–600 Words)</span>
+          </div>
+        </header>
+
+        <div class="zine-columns">
+          
+          <div class="column-left">
+            <p class="lead-paragraph">
+              For five centuries, the architecture of human knowledge was governed by tangible gatekeepers. The newspaper editor sitting beneath green shaded desk lamps, the university librarian cataloging acquisitions with Dewey precision, and the encyclopedia review board operated under an explicit ethical compact: they bore public accountability for truth. Imperfect as these institutions frequently were, their selection mechanisms were rooted in editorial friction. Verification required telephone calls, physical proofreading, legal clearance, and mechanical typesetting. Accuracy was prized because errata were costly to print and impossible to recall once broadsheets hit the morning pavement.
+            </p>
+
+            <blockquote class="pull-quote">
+              "The gatekeeper is no longer a human editor weighing social consequence; it is an opaque mathematical optimization function designed for engagement maximization."
+            </blockquote>
+
+            <p>
+              Today, that analog friction has been vaporized by the algorithmic feed.
+            </p>
+
+            <p>
+              In the contemporary digital ecosystem, the gatekeeper is no longer a human editor weighing social consequence; it is an opaque mathematical optimization function designed for engagement maximization. Algorithms engineered by digital platforms do not ask whether an article is verified, contextually complete, or civic-minded. They ask a singular behavioral question: <em>Will this token stimulate an instantaneous reaction?</em> Rage, shock, ideological affirmation, and tribal anxiety are rewarded with algorithmic amplification, while sober nuance is consigned to digital oblivion.
+            </p>
+
+            <p>
+              This structural shift has converted audiences from active participants in democratic discourse into passive data subjects trapped in self-reinforcing epistemic bubbles. When information is severed from provenance, deepfakes masquerade as historical evidence, sponsored content adopts the visual syntax of investigative journalism, and coordinated influence operations manufacture synthetic consensus.
+            </p>
+          </div>
+
+          <div class="column-right">
+            <p>
+              How, then, does the contemporary citizen reassert epistemic sovereignty? The answer does not lie in nostalgic retreat into analog isolation, but in mastering the critical discipline of <strong>lateral reading</strong>.
+            </p>
+
+            <p>
+              While traditional media education taught students to read vertically—scrolling down an unfamiliar website, scrutinizing its design sheen, "About Us" page, and professional logos—professional fact-checkers do the exact opposite. They read <em>laterally</em>. Upon encountering an unverified claim, they immediately open multiple browser tabs to query external consensus: <em>Who funds this entity? What do domain-level experts say? What primary documentation substantiates this claim?</em>
+            </p>
+
+            <!-- SIFT Framework Callout Box -->
+            <div class="sift-framework-box">
+              <span class="box-tag">OPERATIONAL FRAMEWORK</span>
+              <h4>The SIFT Verification Methodology</h4>
+              <p class="framework-cite">(Caulfield, 2017 / Stanford History Education Group)</p>
+              <ol class="sift-steps">
+                <li><strong>S — Stop:</strong> Pause before reacting, sharing, or internalizing charged narratives.</li>
+                <li><strong>I — Investigate the Source:</strong> Scrutinize authorial pedigree, financial backers, and institutional incentives.</li>
+                <li><strong>F — Find Better Coverage:</strong> Cross-reference external consensus across independent scientific or news databases.</li>
+                <li><strong>T — Trace Claims to the Original Context:</strong> Inspect primary raw video, scientific papers, or transcripts.</li>
+              </ol>
+            </div>
+
+            <p>
+              Media literacy is not an aesthetic preference or an elite academic luxury; it is the immune system of a functional democracy. If we surrender our information appraisal to automated recommendation feeds, we forfeit our capacity for autonomous thought. By demanding transparent algorithmic governance and cultivating rigorous verification habits, we ensure that the technologies created to connect humanity do not ultimately distort our shared understanding of truth.
+            </p>
+          </div>
+
+        </div>
+
+        <footer class="zine-footer">
+          <div class="typographic-spec-box">
+            <strong>Typographic Hierarchy Specifications Applied:</strong>
+            <span>Headline: Playfair Display 38pt / 1.15 line-height</span> • 
+            <span>Body: 11pt / 1.65 line-height / 65-character optimal measure</span> • 
+            <span>Micro: JetBrains Mono 9pt</span>
+          </div>
+        </footer>
+
+      </article>
+
+      <!-- Mandatory Curatorial Placard: Wing 3 -->
+      <aside class="curatorial-placard-plaque" aria-label="Curatorial Placard for Wing 3">
+        <div class="placard-border">
+          <div class="placard-header">
+            <span class="placard-brass-label">CURATORIAL PLACARD • ARTIFACT 03</span>
+            <div class="placard-meta-row">
+              <h3 class="placard-title">The Filtered Horizon: Reclaiming Epistemic Agency</h3>
+              <span class="placard-spec">Typographic Feature Article & Zine Spread • Word Count: 139</span>
+            </div>
+          </div>
+
+          <div class="placard-tabs">
+            <button class="placard-tab active" data-target="w3-design">Design Elements & Principles</button>
+            <button class="placard-tab" data-target="w3-criteria">Media Selection Criteria Evaluation</button>
+          </div>
+
+          <div class="placard-content">
+            <div id="w3-design" class="placard-pane active">
+              <p>
+                The spread enforces strict <strong>visual hierarchy</strong>: a heavy serif headline commands immediate focal attention, followed by an italicized editorial deck, stylized drop caps, and pull quotes set in bold contrasting rules. <strong>Font suitability</strong> pairs a literary transitional serif (evoking journalistic heritage and institutional authority) with a geometric sans-serif for body text (optimizing screen readability and ocular fatigue prevention). <strong>Spacing and alignment</strong> maintain a rigid baseline grid with generous white-space margins, ensuring optimal cognitive digestion of dense argumentative prose.
+              </p>
+            </div>
+            <div id="w3-criteria" class="placard-pane">
+              <p>
+                The article exemplifies exceptional <strong>authority</strong> and <strong>reliability</strong>, synthesizing established information models (Caulfield’s SIFT protocol; Wineburg & McGrew’s Stanford lateral reading studies). Its <strong>timeliness</strong> directly addresses current threats posed by synthetic media and algorithmic sorting, providing urgent civic <strong>value</strong> for senior high school scholars.
+              </p>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ==================== WING 4: AUDIO INFORMATION AND MEDIA ==================== -->
+    <section id="wing-4" class="exhibit-wing" aria-labelledby="wing4-heading">
+      <div class="wing-banner">
+        <span class="wing-tag">EXHIBIT WING 04 • ACOUSTIC RHETORIC</span>
+        <h2 id="wing4-heading" class="wing-title">Audio Information and Media</h2>
+        <p class="wing-lead">Mind Over Media: Decoding the Frictionless Feed (2:45 Studio Commentary)</p>
+      </div>
+
+      <!-- Studio Podcast Experience -->
+      <div class="audio-studio-card">
+        
+        <!-- Left: Audio Console & Real-time Canvas Visualizer -->
+        <div class="studio-deck">
+          <div class="deck-top">
+            <div class="live-indicator">
+              <span class="rec-blip"></span> ON AIR STUDIO MASTER
+            </div>
+            <div class="audio-timing">
+              <span id="audio-current-time">00:00</span> / <span id="audio-total-time">02:45</span>
+            </div>
+          </div>
+
+          <!-- Real-Time Oscilloscope / Frequency Visualizer Canvas -->
+          <div class="visualizer-wrapper">
+            <canvas id="audio-visualizer-canvas" width="600" height="160"></canvas>
+            <div class="waveform-ghost-bars" id="ghost-bars">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+
+          <!-- Audio Transport Controls -->
+          <div class="transport-controls">
+            <button id="audio-play-master-btn" class="btn-play-large" aria-label="Play broadcast">
+              <svg id="a-play-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <svg id="a-pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+            </button>
+            <div class="transport-scrub-bar" id="audio-scrub-track">
+              <div class="transport-scrub-fill" id="audio-scrub-progress" style="width: 0%;"></div>
+            </div>
+            <div class="soundscape-presets">
+              <button id="toggle-ambient-bed" class="ambient-pill active" title="Toggle Lo-Fi Rhodes Musical Bed">
+                <span class="pill-dot"></span> BGM Bed: Ducked (-14dB)
+              </button>
+            </div>
+          </div>
+
+          <!-- Interactive SFX Demonstration Board -->
+          <div class="sfx-soundboard">
+            <span class="soundboard-title">Studio Sound Design Triggers (Audition SFX):</span>
+            <div class="sfx-buttons">
+              <button class="sfx-btn" data-sfx="notification">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                Phone Chime (00:01)
+              </button>
+              <button class="sfx-btn" data-sfx="cash">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                Revenue Register (00:34)
+              </button>
+              <button class="sfx-btn" data-sfx="tapestop">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><circle cx="15.5" cy="15.5" r="1.5"/></svg>
+                Tape-Stop Dead Air (01:22)
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Studio Teleprompter & Engineering Cue Sheet -->
+        <div class="studio-teleprompter">
+          <div class="teleprompter-header">
+            <span class="script-title">MASTER PRODUCTION SCRIPT & ENGINEERING CUES</span>
+            <span class="teleprompter-status" id="prompter-status">READY FOR PLAYBACK</span>
+          </div>
+
+          <div class="cue-transcript" id="cue-transcript">
+            
+            <div class="cue-block" data-time="0">
+              <span class="time-stamp">00:00 – 00:08</span>
+              <div class="cue-direction">[SFX: Triple smartphone notification chime • Rhodes piano intro bed enters at 0 dB, ducks to -14 dB at 00:06]</div>
+            </div>
+
+            <div class="cue-block active" data-time="8">
+              <span class="time-stamp">00:08 – 00:32</span>
+              <p class="cue-voice">
+                <strong>HOST:</strong> "Take a second and check your screen time report. Go on—be honest. Between the infinite scroll of your morning feed, the group chat memes, and the thirty-second video explainers you watched over lunch... how many pieces of media did you digest today? Two hundred? A thousand? Here’s the catch: your brain wasn’t designed for a firehose."
+              </p>
+              <div class="cue-direction">[SFX: Low, resonant clock ticking, fading quickly into background]</div>
+            </div>
+
+            <div class="cue-block" data-time="32">
+              <span class="time-stamp">00:32 – 00:36</span>
+              <div class="cue-direction">[TRANSITION: Rhodes melody swells for 2 seconds with vinyl scratch, then ducks back down to -16 dB. SFX: Cash register cha-ching with data whoosh]</div>
+            </div>
+
+            <div class="cue-block" data-time="36">
+              <span class="time-stamp">00:36 – 01:15</span>
+              <p class="cue-voice">
+                <strong>HOST:</strong> "In the modern attention economy, information isn’t scarce anymore. What’s scarce is your focus. Platforms have perfected the art of the 'frictionless feed.' They remove every cognitive bump that might make you pause. Auto-playing videos, infinite scrolling, predictive algorithms that feed you exactly what confirms your existing biases—because the longer your thumbs stay on the glass, the more ad revenue they print. And in that frictionless slipstream, misinformation doesn't just travel; it sprints."
+              </p>
+              <div class="cue-direction">[SFX: Sub-bass drop accentuating 'revenue']</div>
+            </div>
+
+            <div class="cue-block" data-time="75">
+              <span class="time-stamp">01:15 – 01:22</span>
+              <div class="cue-direction">[AUDIO INTERLUDE: Overlapping frantic news voices ('Breaking news... Doctors warn... Shocking video...') followed by abrupt radio static tape-stop SCREECH cutting into 1 SECOND OF TOTAL SILENCE]</div>
+            </div>
+
+            <div class="cue-block" data-time="83">
+              <span class="time-stamp">01:23 – 01:58</span>
+              <p class="cue-voice">
+                <strong>HOST:</strong> <em>[Whispered close to mic, warm proximity effect]</em> "Stop. Breathe. Media literacy isn’t about swearing off your smartphone or living in an analog cave. It’s about introducing conscious friction into your digital life. Before you hit that share button, ask yourself three simple questions: One: Who made this, and why do they want me to feel angry right now? Two: Can I corroborate this claim with an independent, verifiable source? And three: If this turns out to be false tomorrow, am I willing to own the harm it causes?"
+              </p>
+              <div class="cue-direction">[MUSIC: Ambient minimalist synth pad enters softly at -18 dB]</div>
+            </div>
+
+            <div class="cue-block" data-time="118">
+              <span class="time-stamp">01:58 – 02:30</span>
+              <p class="cue-voice">
+                <strong>HOST:</strong> "Every time you pause to check a source, you aren't just protecting yourself from getting fooled—you’re acting as a responsible node in your community’s information network. You’re stopping the contagion of falsehood in its tracks. In a world addicted to frictionless speed, your critical pause is the ultimate act of rebellion."
+              </p>
+              <div class="cue-direction">[MUSIC: Drum groove re-enters, building to inspirational climax]</div>
+            </div>
+
+            <div class="cue-block" data-time="150">
+              <span class="time-stamp">02:30 – 02:45</span>
+              <p class="cue-voice">
+                <strong>HOST:</strong> "This is the MIL Culminating Showcase audio dispatch. Stay curious, stay skeptical, and keep your signal clear."
+              </p>
+              <div class="cue-direction">[OUTRO: Upbeat theme swells to 0 dB for 5 seconds, followed by radio fade-out to dead silence]</div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Mandatory Curatorial Placard: Wing 4 -->
+      <aside class="curatorial-placard-plaque" aria-label="Curatorial Placard for Wing 4">
+        <div class="placard-border">
+          <div class="placard-header">
+            <span class="placard-brass-label">CURATORIAL PLACARD • ARTIFACT 04</span>
+            <div class="placard-meta-row">
+              <h3 class="placard-title">Mind Over Media: Decoding the Frictionless Feed</h3>
+              <span class="placard-spec">Studio Podcast Master • 2:45 Min • 24-bit 48kHz Stereo • Word Count: 140</span>
+            </div>
+          </div>
+
+          <div class="placard-tabs">
+            <button class="placard-tab active" data-target="w4-design">Design Elements & Principles</button>
+            <button class="placard-tab" data-target="w4-criteria">Media Selection Criteria Evaluation</button>
+          </div>
+
+          <div class="placard-content">
+            <div id="w4-design" class="placard-pane active">
+              <p>
+                The production utilizes <strong>dynamic audio layering</strong> to contrast chaotic information overload with reflective stillness. <strong>Acoustic contrast</strong> is established through sound effects (rapid notification chirps, frantic overlapping broadcast montage) culminating in an intentional 1-second dead-air tape stop to command listener focus. <strong>Volume ducking</strong> automatically attenuates the background musical bed by -14 dB whenever the narrator speaks, ensuring pristine vocal clarity. Spatial <strong>panning and stereo balance</strong> separate ambient Foley effects from the centered, compressed monophonic voiceover track.
+              </p>
+            </div>
+            <div id="w4-criteria" class="placard-pane">
+              <p>
+                The commentary scores high across <strong>timeliness</strong> and <strong>target audience suitability</strong>, directly targeting the digital habits and screen-time fatigue of Grade 12 peers. It carries profound educational <strong>value</strong> and <strong>reliability</strong>, distilling peer-reviewed cognitive psychology principles on confirmation bias into three memorable, actionable verification questions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ==================== ETHICS & COLOPHON ==================== -->
+    <section id="ethics" class="exhibit-wing" aria-labelledby="ethics-heading">
+      <div class="wing-banner">
+        <span class="wing-tag">LEGAL, CITATIONS & COLOPHON</span>
+        <h2 id="ethics-heading" class="wing-title">Implementation Ethics & Attributions</h2>
+        <p class="wing-lead">Intellectual Property, Fair Use Compliance, and Scholarly Framework</p>
+      </div>
+
+      <div class="ethics-grid">
+        
+        <div class="ethics-card">
+          <div class="ethics-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Fair Use & Intellectual Property Compliance</h3>
+          <p>
+            This electronic portfolio strictly complies with the statutory provisions of the <strong>Philippine Intellectual Property Code (Republic Act No. 8293)</strong> and the international doctrine of <strong>Fair Use (17 U.S.C. § 107)</strong>. All historical still frames, acoustic reproductions, and typographic models are deployed exclusively for non-profit academic scholarship and educational evaluation.
+          </p>
+        </div>
+
+        <div class="ethics-card">
+          <div class="ethics-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          </div>
+          <h3>Photojournalism Ethics & Subject Dignity</h3>
+          <p>
+            Every individual documented across Wing 2’s community photographic series gave informed verbal consent prior to image capture, following UNESCO and National Press Photographers Association (NPPA) ethical codes. Subjects retain their privacy rights, and no images have been deceptively manipulated or presented out of authentic context.
+          </p>
+        </div>
+
+        <div class="ethics-card">
+          <div class="ethics-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>AI Transparency & Authorship Disclosure</h3>
+          <p>
+            In accordance with DepEd academic integrity guidelines, all original written arguments, curatorial framing, scripts, and journalistic captions represent original student scholarship. Algorithmic and digital synthesis tools were utilized solely for illustrative vectors, client-side audio frequency generation, and interface scaffolding.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Academic Bibliography APA 7th -->
+      <div class="bibliography-container">
+        <h3 class="bib-title">Curatorial References & Academic Bibliography (APA 7th Edition)</h3>
+        <ul class="bib-list">
+          <li>
+            <strong>Briggs, A., & Burke, P. (2020).</strong> <em>A social history of the media: From Gutenberg to the Internet</em> (4th ed.). Polity Press.
+          </li>
+          <li>
+            <strong>Caulfield, M. (2017).</strong> <em>Web literacy for student fact-checkers and other curious users</em>. Pressbooks. https://webliteracy.pressbooks.com/
+          </li>
+          <li>
+            <strong>Kovach, B., & Rosenstiel, T. (2021).</strong> <em>The elements of journalism: What newspeople should know and the public should expect</em> (4th ed.). Crown.
+          </li>
+          <li>
+            <strong>McLuhan, M. (1964).</strong> <em>Understanding media: The extensions of man</em>. McGraw-Hill.
+          </li>
+          <li>
+            <strong>UNESCO. (2021).</strong> <em>Media and information literate citizens: Think critically, click wisely!</em> UNESCO Publishing.
+          </li>
+          <li>
+            <strong>Wardle, C., & Derakhshan, H. (2017).</strong> <em>Information disorder: Toward an interdisciplinary framework for research and policymaking</em>. Council of Europe.
+          </li>
+          <li>
+            <strong>Wineburg, S., & McGrew, S. (2019).</strong> Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. <em>Cognitive Science</em>, 43(11), e12798.
+          </li>
+          <li>
+            <strong>Zuboff, S. (2019).</strong> <em>The age of surveillance capitalism: The fight for a human future at the new frontier of power</em>. PublicAffairs.
+          </li>
+        </ul>
+        
+        <div class="license-notice">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M14.83 14.83a4 4 0 1 1 0-5.66"/></svg>
+          <span>Licensed under <strong>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</strong>.</span>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ==================== EXPORT & TOOLKIT MODAL DRAWER ==================== -->
+  <aside id="export-drawer" class="drawer-modal" aria-hidden="true" role="dialog" aria-labelledby="drawer-heading">
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <h3 id="drawer-heading">MIL Portfolio Curatorial Toolkit</h3>
+        <button id="close-drawer-btn" class="btn-close" aria-label="Close drawer">&times;</button>
+      </div>
+
+      <div class="drawer-body">
+        <div class="toolkit-section">
+          <h4>Export for Platform Submission</h4>
+          <p>Easily transfer the curated content to your required school platform:</p>
+          <div class="export-actions">
+            <button id="copy-markdown-btn" class="btn-toolkit">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              Copy Full Portfolio Markdown
+            </button>
+            <button id="print-portfolio-btn" class="btn-toolkit">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+              Print / Save as Exhibit PDF
+            </button>
+          </div>
+        </div>
+
+        <div class="toolkit-section">
+          <h4>Platform Migration Guides</h4>
+          <ul class="platform-list">
+            <li>
+              <strong>Google Sites:</strong> Embed this page as a Full Page Embed URL or use the 4 Wing pages with the formatted text and placarding.
+            </li>
+            <li>
+              <strong>Canva Websites:</strong> Import the 6 photo plates and 4 Placard layouts using the editorial grid templates.
+            </li>
+            <li>
+              <strong>Notion / Wix / WordPress:</strong> Copy the verbatim content from <code>PORTFOLIO_MASTER_DOCUMENT.md</code> with zero formatting loss.
+            </li>
+          </ul>
+        </div>
+
+        <div class="toolkit-section">
+          <h4>Rubric Compliance Checklist</h4>
+          <ul class="checklist">
+            <li><span class="chk-done">✓</span> <strong>Lobby:</strong> 268-word Curator's Statement (Rubric: 200–300 words).</li>
+            <li><span class="chk-done">✓</span> <strong>Wing 1:</strong> 4-Era Video Presentation with 138-word Placard.</li>
+            <li><span class="chk-done">✓</span> <strong>Wing 2:</strong> 6 Community Photos with journalistic captions & 142-word Placard.</li>
+            <li><span class="chk-done">✓</span> <strong>Wing 3:</strong> 532-word Feature Article with typography principles & 139-word Placard.</li>
+            <li><span class="chk-done">✓</span> <strong>Wing 4:</strong> 2:45 Studio Audio Commentary with SFX cues & 140-word Placard.</li>
+            <li><span class="chk-done">✓</span> <strong>Placards 1–4:</strong> 3+ Design Elements & 6 Media Selection Criteria explicitly covered.</li>
+            <li><span class="chk-done">✓</span> <strong>Ethics:</strong> Fair Use, RA 8293, UNESCO consent, APA 7th bibliography.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==================== STORYBOARD MODAL (FOR WING 1) ==================== -->
+  <aside id="storyboard-modal" class="drawer-modal" aria-hidden="true" role="dialog">
+    <div class="drawer-overlay" id="storyboard-overlay"></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3>Wing 1: Complete Production Storyboard & Script</h3>
+        <button id="close-storyboard-btn" class="btn-close">&times;</button>
+      </div>
+      <div class="modal-content-scroll" id="storyboard-content-body">
+        <!-- Injected via app.js -->
+      </div>
+    </div>
+  </aside>
+
+  <!-- Floating Toast Notification -->
+  <div id="toast-notification" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
